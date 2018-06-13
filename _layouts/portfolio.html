@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container">
+        <div class="row">
+{% for project in site.projects%}
+
+<div class="col-xs-offset-2 col-md-offset-0 col-md-3">
+        <div class="viewport no-margin">
+          <a href="./{{project.title}}">
+            <span class="dark-background">{{project.title}}</span>
+            <img src="images/img/portfolio/{{project.image1}}" alt="{{image.title}}">
+          </a>
+        </div>
+      </div>  
+      {% endfor %}
+    </div>
+</div>
+      
