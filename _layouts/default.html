@@ -5,24 +5,23 @@
   <meta charset="UTF-8">
   <title>David Emrich— {{page.title}}</title>
 
-  <meta name="description" content="Wow, Such meta" />
+  <meta name="description" content="Combing the elements of design and programming to make Beautiful / Functional User Interfaces and Web Applications" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
   <!-- Loading Bootstrap -->
-  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-
+  <link href="{{ "/bootstrap/css/bootstrap.css" | relative_url}}" rel="stylesheet" media="screen">
   <!-- Loading Flat UI -->
-  <link href="css/flat-ui.css" rel="stylesheet">
-
+  <link href="{{"/css/flat-ui.css" | relative_url}}" rel="stylesheet">
   <!-- Loading Icons -->
-  <link href="css/icons.css" rel="stylesheet">
-
+  <link href="{{"/css/icons.css"}}" rel="stylesheet">
   <!-- Loading Image Hover -->
-  <link href="css/img_hov.css" rel="stylesheet">
+  <link href="{{"/css/img_hov.cs"}}s" rel="stylesheet">
+  
+  <link href="{{"/css/style.css"}}" rel="stylesheet">
 
 
-  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <link rel="shortcut icon" href="{{"/images/favicon.ico"}}">
   <style type="text/css">
     a:hover {
       color: #99be25;
@@ -47,11 +46,11 @@
     {% include footer.html %}
 
   <!-- Load JS here for greater good =============================-->
-  <script src="./js/jquery-1.8.3.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/img_hov.js"></script>
-  <script src="./js/jqBootstrapValidation.js"></script>
-  <script src="./js/contact_me.js"></script>
+  <script src="{{"/js/jquery-2.0.3.min.js"}}"></script>
+  <script src="{{"/js/bootstrap.min.js"}}"></script>
+  <script src="{{"/js/img_hov.js"}}"></script>
+  <script src="{{"/js/jqBootstrapValidation.js"}}"></script>
+  <script src="{{"/js/contact_me.js"}}"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;

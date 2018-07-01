@@ -6,6 +6,14 @@ layout: default
         <div class="container">
             <div class="col-md-8">
                 <img src="images/img/portfolio/{{page.image1}}" class="img-responsive">
+                {% if page.image2 != null %}
+                <br><br>
+                <img src="images/img/portfolio/{{page.image2}}" class="img-responsive"><br><br>
+                {% if page.image3 != null %}
+                <img src="images/img/portfolio/{{page.image3}}" class="img-responsive">
+                {% endif %}
+                {% endif %}
+
             </div>
             <div class="col-md-4">
                 <span style="letter-spacing: 0.15em">
@@ -14,14 +22,16 @@ layout: default
                 <hr class="style-two">
                     {{page.content}} <br><br>
                     <p style="line-height: 2em">
-                    Roles:
+                    Role Involved:
                     <br> {{page.role}}
                     <br>
                     <br> Technologies Used:
                     <br> {{page.technology}}
                     <br>
                     <br>
-                    <a href="https://myselectsmart.com" target="_blank"> Visit Site »</a>
+                    {% if page.link != null %}
+                    <a href="{{ page.link }}" target="_blank"> Visit Site »</a>
+                    {% endif %}
                 </p>
             </div>
         </div>

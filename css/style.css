@@ -3,3 +3,12 @@
 	
 }
 
+p {
+	font-size: 1.2em;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.navbar{
+	font-size: 1.3em;
+}
